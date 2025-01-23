@@ -14,8 +14,8 @@ import java.util.UUID;
 public class Game {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String title;
 
@@ -30,8 +30,11 @@ public class Game {
 
     private String imgUrl;
 
+
+    @Column(name = "shortDescription", columnDefinition = "TEXT")
     private String shortDescription;
 
+    @Column(name = "longDescription", columnDefinition = "TEXT")
     private String longDescription;
 
 }
