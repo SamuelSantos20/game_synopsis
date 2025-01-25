@@ -23,6 +23,8 @@ public class GameList {
 
     private String name;
 
+
+
     @Override
     public final boolean equals(Object o) {
         if (this == o) return true;
