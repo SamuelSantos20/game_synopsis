@@ -3,6 +3,7 @@ package com.devesuperior.dslist.service;
 import com.devesuperior.dslist.dto.GameDTO;
 import com.devesuperior.dslist.dto.GameMinDTO;
 import com.devesuperior.dslist.model.Game;
+import com.devesuperior.dslist.projections.GameMinProjection;
 import com.devesuperior.dslist.repository.GameRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -27,6 +28,16 @@ public class GameService {
     }
 
     @Transactional(readOnly = true)
+    public List<GameMinDTO> findByList(Long listId) {
+
+        List<GameMinDTO> list = gameRepository.searchByList(listId).stream().map(GameMinDTO::new).toList();
+
+        return list;
+
+
+    }
+
+    @Transactional(readOnly = true)
     public GameDTO findById(Long id) {
 
         GameDTO gameDTO = gameRepository.findById(id).map(GameDTO::new).get();
@@ -34,6 +45,10 @@ public class GameService {
         return gameDTO;
 
     }
+
+
+
+
 
 
 }

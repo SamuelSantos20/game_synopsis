@@ -1,6 +1,7 @@
 package com.devesuperior.dslist.dto;
 
 import com.devesuperior.dslist.model.Game;
+import com.devesuperior.dslist.projections.GameMinProjection;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -25,5 +26,13 @@ public class GameMinDTO {
         title = game.getTitle();
         imgUrl = game.getImgUrl();
         shortDescription = game.getShortDescription();
+    }
+
+    public GameMinDTO(GameMinProjection gameMinProjection) {
+        id = gameMinProjection.getId();
+        year = gameMinProjection.getYear();
+        title = gameMinProjection.getTitle();
+        imgUrl = gameMinProjection.getImgUrl();
+        shortDescription = gameMinProjection.getShortDescription();
     }
 }
