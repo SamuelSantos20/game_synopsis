@@ -1,65 +1,53 @@
-Game Project API
+🎮 DSList - Catálogo de Jogos
+Este projeto foi desenvolvido durante o Intensivão Java + Spring, oferecido pelo Nélio Alves. O objetivo foi aprofundar conhecimentos em Spring Boot, MapStruct, PostgreSQL, Docker, Swagger e outras tecnologias modernas para desenvolvimento de APIs robustas e escaláveis.
 
-👋 Fala, pessoal! Tudo certo?
+🚀 Tecnologias Utilizadas
+Java 21 com Spring Boot 3.3.7
+MapStruct para mapeamento de entidades
+PostgreSQL para armazenamento de dados
+Liquibase para versionamento do banco de dados
+Spring Security com JWT para autenticação
+Docker Compose para gerenciamento do ambiente
+Swagger para documentação da API
+📌 Funcionalidades
+✅ Cadastro, listagem e gerenciamento de jogos
+✅ Organização de jogos em listas personalizadas
+✅ Autenticação segura com JWT
+✅ Estrutura modularizada seguindo boas práticas
 
-Quero apresentar para vocês meu mais novo projeto: Game Project API!
-🚀 Essa API foi desenvolvida para gerenciar listas de jogos de forma eficiente e organizada.
-
-🛠️ Tecnologias Utilizadas:
-
-Java com Spring Boot para uma arquitetura robusta e escalável.
-
-MapStruct para mapeamento entre entidades e DTOs.
-
-PostgreSQL como banco de dados principal.
-
-Spring Security com JWT para autenticação e autorização seguras.
-
-Docker Compose para orquestrar o ambiente de desenvolvimento.
-
-Swagger para documentação interativa da API.
-
-Liquibase para versionamento e migrações do banco de dados.
-
-🔍 Funcionalidades:
-
-Gerenciamento de jogos, incluindo cadastro, listagem e organização em listas personalizadas.
-
-Autenticação segura utilizando JWT.
-
-Operações dinâmicas para substituir posições de jogos em listas.
-
-Documentação completa via Swagger.
-
-Estrutura de banco de dados sólida utilizando PostgreSQL.
-
-💡 Objetivo:
-
-O foco desse projeto foi aprimorar meus conhecimentos em Spring Boot, boas práticas no desenvolvimento de APIs e autenticação segura com JWT.
-
-📈 Próximos Passos:
-
-Implementar funcionalidades para filtragem e busca personalizada.
-
-Adicionar relatórios sobre as listas de jogos mais populares.
-
-Melhorar o controle de permissões entre usuários.
-
-Integração com APIs externas de jogos para enriquecer o conteúdo.
-
-🖼️ Diagrama de Modelo:
+📂 Estrutura do Projeto
+Abaixo, o diagrama do modelo de dados utilizado:
 
 
+📬 Coleção de Requisições
+Para facilitar os testes da API, utilize a coleção do Postman, disponível no repositório:
 
-📄 Coleção Postman:
+Game project.postman_collection.json
 
-Incluímos a coleção para testes no Postman. Baixe aqui.
+🛠️ Como Executar
+1️⃣ Clone o repositório:
 
-👉 Confira o projeto completo aqui: Link do Repositório
+sh
+Copiar
+Editar
+git clone https://github.com/seu-usuario/dslist.git
+cd dslist
+2️⃣ Configure o banco de dados no arquivo application.properties
 
-Qualquer sugestão ou feedback será super bem-vindo! 🙌
+3️⃣ Execute o projeto com:
 
-Hashtags
+sh
+Copiar
+Editar
+./mvnw spring-boot:run
+4️⃣ Acesse a documentação no navegador:
 
-#Java #SpringBoot #MapStruct #Liquibase #JWT #Docker #PostgreSQL #Backend #APIs #SpringSecurity
+bash
+Copiar
+Editar
+http://localhost:8080/swagger-ui/index.html
+📈 Próximos Passos
+🔹 Melhorias na organização de listas
+🔹 Implementação de novos filtros e relatórios
+🔹 Integração com serviços externos
 
