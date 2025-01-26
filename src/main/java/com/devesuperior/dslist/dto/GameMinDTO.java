@@ -2,21 +2,23 @@ package com.devesuperior.dslist.dto;
 
 import com.devesuperior.dslist.model.Game;
 import com.devesuperior.dslist.projections.GameMinProjection;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @Getter
+@Schema(name = "GameMinDTO")
 public class GameMinDTO {
-
+    @Schema(name = "")
     private Long id;
-
+    @Schema(name = "title")
     private String title;
-
+    @Schema(name = "year")
     private Integer year;
-
+    @Schema(name = "imgUrl")
     private String imgUrl;
-
+    @Schema(name = "shortDescription")
     private String shortDescription;
 
 
