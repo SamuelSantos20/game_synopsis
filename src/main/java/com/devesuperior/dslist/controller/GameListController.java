@@ -3,13 +3,11 @@ package com.devesuperior.dslist.controller;
 import com.devesuperior.dslist.dto.GameDTO;
 import com.devesuperior.dslist.dto.GameListDTO;
 import com.devesuperior.dslist.dto.GameMinDTO;
+import com.devesuperior.dslist.dto.ReplacementDTO;
 import com.devesuperior.dslist.service.GameListService;
 import com.devesuperior.dslist.service.GameService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -35,6 +33,15 @@ public class GameListController {
 
         List<GameMinDTO> all = gameService.findByList(listId);
         return all;
+
+    }
+
+    @PostMapping (value = "/{listId}/replecement")
+    public void move(@PathVariable(value = "listId")Long listId, @RequestBody ReplacementDTO replacementDTO) {
+        
+
+     gameListService.move(listId, replacementDTO.getSourceIndex(),replacementDTO.getDestinationIndex());
+
 
     }
 

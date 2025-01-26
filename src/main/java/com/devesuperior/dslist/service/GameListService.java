@@ -4,6 +4,7 @@ import com.devesuperior.dslist.dto.GameDTO;
 import com.devesuperior.dslist.dto.GameListDTO;
 import com.devesuperior.dslist.dto.GameMinDTO;
 import com.devesuperior.dslist.model.GameList;
+import com.devesuperior.dslist.projections.GameMinProjection;
 import com.devesuperior.dslist.repository.GameListRepository;
 import com.devesuperior.dslist.repository.GameRepository;
 import lombok.RequiredArgsConstructor;
@@ -18,6 +19,8 @@ public class GameListService {
 
     private final GameListRepository gameListRepository;
 
+    private final GameRepository gameRepository;
+
     @Transactional(readOnly = true)
     public List<GameListDTO> findAll() {
 
@@ -29,15 +32,26 @@ public class GameListService {
     }
 
 
-//
-//    @Transactional(readOnly = true)
-//    public GameDTO findById(Long id) {
-//
-//        GameDTO gameDTO = gameRepository.findById(id).map(GameDTO::new).get();
-//
-//        return gameDTO;
-//
-//    }
+    @Transactional
+    public void move(Long listId, int sourceIndex, int destinationIndex) {
+        List<GameMinProjection> list = gameRepository.searchByList(listId);
+
+
+        GameMinProjection remove = list.remove(sourceIndex);
+        list.add(destinationIndex, remove);
+
+
+        int min = Math.min(sourceIndex, destinationIndex);
+
+        int max = Math.max(sourceIndex, destinationIndex);
+
+        for (int i = min; i <= max; i++) {
+
+            gameListRepository.updateBelongingPosition(listId, list.get(i).getId(), i);
+
+        }
+
+    }
 
 
 }
