@@ -39,7 +39,8 @@ Para facilitar os testes da API, utilize a coleção do **Postman**, disponível
 
 📂 `Game project.postman_collection.json`
 
-📬 [Baixar Coleção do Postman]([https://raw.githubusercontent.com/seu-usuario/seu-repositorio/main/Game%20project.postman_collection.json](https://raw.githubusercontent.com/SamuelSantos20/game_synopsis/refs/heads/master/Game%20project.postman_collection.json?token=GHSAT0AAAAAAC4PXWKRUHT2KJ3DHM3TJP4QZ4WVHUA))
+📬 [Baixar Coleção do Postman](https://raw.githubusercontent.com/SamuelSantos20/game_synopsis/master/Game%20project.postman_collection.json)
+
 
 
 ---
