@@ -29,7 +29,7 @@ Este projeto foi desenvolvido durante o **Intensivão Java + Spring**, oferecido
 
 Abaixo, o diagrama do modelo de dados utilizado:
 
-![Modelo de Dados](file:///C:/Users/Samuel/Downloads/dslist-model.png)
+ ![dslist-model](https://github.com/user-attachments/assets/bf561a32-778c-4f97-8d96-ad19fa792cf6)
 
 ---
 
@@ -38,6 +38,8 @@ Abaixo, o diagrama do modelo de dados utilizado:
 Para facilitar os testes da API, utilize a coleção do **Postman**, disponível no repositório:
 
 📂 `Game project.postman_collection.json`
+[Uploading Game project.postman_collection.json…]()
+
 
 ---
 
@@ -54,7 +56,8 @@ cd dslist
 
 3️⃣ **Execute o projeto** com:
 
-```sh
+```sh[Uploading Game project.postman_collection.json…]()
+
 ./mvnw spring-boot:run
 ```
 
