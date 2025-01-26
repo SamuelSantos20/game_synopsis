@@ -29,7 +29,7 @@ Este projeto foi desenvolvido durante o **Intensivão Java + Spring**, oferecido
 
 Abaixo, o diagrama do modelo de dados utilizado:
 
-![Modelo de Dados](dslist-model.png)
+![Modelo de Dados](file:///C:/Users/Samuel/Downloads/dslist-model.png)
 
 ---
 
