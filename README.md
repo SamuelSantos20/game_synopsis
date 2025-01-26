@@ -9,8 +9,8 @@ Este projeto foi desenvolvido durante o **Intensivão Java + Spring**, oferecido
 - **Java 21** com **Spring Boot 3.3.7**
 - **MapStruct** para mapeamento de entidades
 - **PostgreSQL** para armazenamento de dados
+- **H2** para banco de dados em memória (opcional para testes)
 - **Liquibase** para versionamento do banco de dados
-- **Spring Security** com **JWT** para autenticação
 - **Docker Compose** para gerenciamento do ambiente
 - **Swagger** para documentação da API
 
@@ -20,7 +20,6 @@ Este projeto foi desenvolvido durante o **Intensivão Java + Spring**, oferecido
 
 ✅ Cadastro, listagem e gerenciamento de jogos  
 ✅ Organização de jogos em listas personalizadas  
-✅ Autenticação segura com JWT  
 ✅ Estrutura modularizada seguindo boas práticas  
 
 ---
@@ -39,7 +38,7 @@ Para facilitar os testes da API, utilize a coleção do **Postman**, disponível
 
 📂 `Game project.postman_collection.json`
 
-📬 [Baixar Coleção do Postman](https://raw.githubusercontent.com/SamuelSantos20/game_synopsis/master/Game%20project.postman_collection.json)
+📬 [Baixar Coleção do Postman](https://raw.githubusercontent.com/SamuelSantos20/game_synopsis/refs/heads/master/Game%20project.postman_collection.json?token=GHSAT0AAAAAAC4PXWKQMOE72ZUCJRZJ4BVGZ4WVLWQ)
 
 
 
