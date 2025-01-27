@@ -9,8 +9,8 @@ Este projeto foi desenvolvido durante o **Intensivão Java + Spring**, oferecido
 - **Java 21** com **Spring Boot 3.3.7**
 - **MapStruct** para mapeamento de entidades
 - **PostgreSQL** para armazenamento de dados
+- **H2** para banco de dados em memória (opcional para testes)
 - **Liquibase** para versionamento do banco de dados
-- **Spring Security** com **JWT** para autenticação
 - **Docker Compose** para gerenciamento do ambiente
 - **Swagger** para documentação da API
 
@@ -20,7 +20,6 @@ Este projeto foi desenvolvido durante o **Intensivão Java + Spring**, oferecido
 
 ✅ Cadastro, listagem e gerenciamento de jogos  
 ✅ Organização de jogos em listas personalizadas  
-✅ Autenticação segura com JWT  
 ✅ Estrutura modularizada seguindo boas práticas  
 
 ---
@@ -29,7 +28,7 @@ Este projeto foi desenvolvido durante o **Intensivão Java + Spring**, oferecido
 
 Abaixo, o diagrama do modelo de dados utilizado:
 
-![Modelo de Dados](file:///C:/Users/Samuel/Downloads/dslist-model.png)
+ ![dslist-model](https://github.com/user-attachments/assets/bf561a32-778c-4f97-8d96-ad19fa792cf6)
 
 ---
 
@@ -38,6 +37,7 @@ Abaixo, o diagrama do modelo de dados utilizado:
 Para facilitar os testes da API, utilize a coleção do **Postman**, disponível no repositório:
 
 📂 `Game project.postman_collection.json`
+
 
 ---
 
@@ -54,7 +54,8 @@ cd dslist
 
 3️⃣ **Execute o projeto** com:
 
-```sh
+```sh[Uploading Game project.postman_collection.json…]()
+
 ./mvnw spring-boot:run
 ```
 
